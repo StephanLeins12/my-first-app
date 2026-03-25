@@ -48,7 +48,7 @@ async function check() {
       console.error('Supabase auth check failed:', sessionError.message)
       process.exit(1)
     }
-    console.log('Supabase URL:', supabaseUrl.replace(/\/$/, ''))
+    console.log('Supabase URL:', supabaseUrl!.replace(/\/$/, ''))
     console.log('Auth reachable: OK (session:', session?.session ? 'present' : 'none', ')')
 
     // Optional: try a generic table query if you have a table (e.g. profiles)
