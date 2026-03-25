@@ -1,0 +1,22 @@
+{
+  "name": "supabase-mcp-server",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "MCP Server for Supabase Integration",
+  "main": "supabase-mcp.ts",
+  "scripts": {
+    "start": "tsx supabase-mcp.ts",
+    "build": "tsc",
+    "dev": "tsx watch supabase-mcp.ts",
+    "check": "tsx check-connection.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@supabase/supabase-js": "^2.95.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4.7.0",
+    "typescript": "^5"
+  }
+}
